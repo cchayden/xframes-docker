@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Build and run the xframes docker container
+mkdir notebooks
+docker run --rm --name xframes -p 8888:8888 -p 4040-4048:4040-4048 -v $PWD/notebooks:/home/jovyan/work xframes

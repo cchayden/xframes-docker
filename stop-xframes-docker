@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Stop and remove the xframes docker container
+docker rm -f xframes

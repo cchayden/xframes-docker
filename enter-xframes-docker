@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Build and run the xframes docker container 
+docker exec -it xframes /bin/bash
