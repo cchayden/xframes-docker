@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# publish
+docker login
+docker tag xframes cchayden/xframes
+docker push cchayden/xframes
+

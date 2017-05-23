@@ -4,6 +4,13 @@ Build and Run XFrames Docker
 These commands run Spark and XFrames in a docker,
 which you can access with Jupyter.
 
+Run From Registry
+-----------------
+Make sure there is a `notebooks` directory.
+
+    docker run --rm --name xframes -p 8888:8888 -v $PWD/notebooks:/home/jovyan/work cchayden/xframes
+
+
 Build
 -----
     build-xframes-docker
