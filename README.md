@@ -20,7 +20,7 @@ Then browse to `localhost:8888` to enter the notebook.
 If you want, you can replace `$PWD/notebooks` and `$PWD/data` with
 other directories on your machine.  You must pass an absolute pathname.
 These directories store the notebooks and data that you access
-through the jupyter notebook.
+through the Jupyter notebook.
 
 Stop
 ----
