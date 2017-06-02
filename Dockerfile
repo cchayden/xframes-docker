@@ -3,6 +3,7 @@ FROM jupyter/pyspark-notebook
 MAINTAINER XFrames Project <cchayden@gmail.com>
 
 VOLUME /notebooks
+VOLUME /data
 
 EXPOSE 8888
 EXPOSE 4040-4048
