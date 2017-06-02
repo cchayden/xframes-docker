@@ -1,10 +1,10 @@
-Build and Run XFrames Docker
-============================
+Run XFrames Docker From dockerHub
+=================================
 
 These commands run Spark and XFrames in a docker,
 which you can access with Jupyter.
 
-Run From Registry
+Run
 -----------------
 Make sure there is a `notebooks` and `data` directory.
 
@@ -13,7 +13,16 @@ Make sure there is a `notebooks` and `data` directory.
     -v $PWD/notebooks:/home/jovyan/work \
     -v $PWD/data /data \
     cchayden/xframes
+    
+Then browse to localhost:8888.
+Store data files in the data directory.
+From withing the notebook, access then via /data/<file>
 
+
+
+
+Build and Run XFrames Docker
+============================
 
 Build
 -----
@@ -50,4 +59,4 @@ View spark console
 ------------------
 Browse to localhost:4040.
 
-This shows the Spark console
+This shows the Spark console.
