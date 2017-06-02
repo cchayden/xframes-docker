@@ -6,9 +6,13 @@ which you can access with Jupyter.
 
 Run From Registry
 -----------------
-Make sure there is a `notebooks` directory.
+Make sure there is a `notebooks` and `data` directory.
 
-    docker run --rm --name xframes -p 8888:8888 -v $PWD/notebooks:/home/jovyan/work cchayden/xframes
+    docker run --rm --name xframes \
+    -p 8888:8888 \
+    -v $PWD/notebooks:/home/jovyan/work \
+    -v $PWD/data /data \
+    cchayden/xframes
 
 
 Build
