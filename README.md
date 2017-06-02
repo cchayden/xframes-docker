@@ -1,8 +1,8 @@
-Run XFrames Docker From DockerHub
-=================================
+Run XFrames Docker
+==================
 
 These commands run Spark and XFrames in a docker,
-that you can access with Jupyter.
+that you can access using a Jupyter notebook.
 
 Run
 ---
@@ -22,6 +22,8 @@ other directories on your machine.  You must pass an absolute pathname.
 These directories store the notebooks and data that you access
 through the jupyter notebook.
 
+Stop
+----
 To stop the docker:
 
     docker stop xframes
