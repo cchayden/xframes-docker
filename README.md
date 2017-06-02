@@ -8,7 +8,7 @@ Run
 -----------------
 Make sure there is a `notebooks` and `data` directory.
 
-    docker run --rm --name xframes \
+    docker run -d --rm --name xframes \
     -p 8888:8888 \
     -v $PWD/notebooks:/home/jovyan/work \
     -v $PWD/data /data \
