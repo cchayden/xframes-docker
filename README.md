@@ -1,11 +1,11 @@
 Run XFrames Docker
-==================
+------------------
 
 These commands run Spark and XFrames in a docker,
 that you can access using a Jupyter notebook.
 
 Run
----
+===
 Make sure there is a `notebooks` directory and `data` directory.
 Then run:
 
@@ -23,16 +23,16 @@ These directories store the notebooks and data that you access
 through the Jupyter notebook.
 
 Stop
-----
+===
 To stop the docker:
 
     docker stop xframes
 
 Using XFrames Docker
-====================
+--------------------
 
 Run notebook
-------------
+============
 Browse to localhost:8888.
 
 You can test by creatng an (python2) notebook, and then
