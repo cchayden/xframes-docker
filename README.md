@@ -6,8 +6,8 @@ that you can access with Jupyter.
 
 Run
 ---
-Make sure there is a `notebooks` and `data` directory.
-Then:
+Make sure there is a `notebooks` directory and `data` directory.
+Then run:
 
     docker run -d --rm --name xframes \
     -p 8888:8888 \
@@ -18,9 +18,9 @@ Then:
 Then browse to `localhost:8888` to enter the notebook.
 
 If you want, you can replace `$PWD/notebooks` and `$PWD/data` with
-other directories on your machine.
+other directories on your machine.  You must pass an absolute pathname.
 These directories store the notebooks and data that you access
-through the notebook.
+through the jupyter notebook.
 
 To stop the docker:
 
@@ -33,8 +33,8 @@ Run notebook
 ------------
 Browse to localhost:8888.
 
-You can test by creatng a (python2) notebook, and then
-entering the test program in the first call.
+You can test by creatng an (python2) notebook, and then
+entering the test program in the first cell.
 
     from xframes import XFrame
 
@@ -42,3 +42,7 @@ entering the test program in the first call.
     print xf
 
 From within the notebook, access the data via `/data/<file>`
+For example:
+
+    xf = XFrame('/data/some-file.csv')
+    print xf
